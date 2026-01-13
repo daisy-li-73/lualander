@@ -1,29 +1,24 @@
 using UnityEngine;
 
-public class GameLevel : MonoBehaviour {
-
-
-    [SerializeField] private int levelNumber;
+public class GameLevel : MonoBehaviour
+{
+    [SerializeField] private int level;
     [SerializeField] private Transform landerStartPositionTransform;
     [SerializeField] private Transform cameraStartTargetTransform;
-    [SerializeField] private float zoomedOutOrthographicSize;
 
 
-
-    public int GetLevelNumber() {
-        return levelNumber;
+    public int GetLevel()
+    {
+        return level;
     }
 
-    public Vector3 GetLanderStartPosition() {
+    public Vector3 GetLanderStartPosition()
+    {
         return landerStartPositionTransform.position;
     }
 
-    public Transform GetCameraStartTargetTransform() {
+    public Transform GetCameraStartTargetTransform()
+    {
         return cameraStartTargetTransform;
     }
-
-    public float GetZoomedOutOrthographicSize() {
-        return zoomedOutOrthographicSize;
-    }
-
 }
